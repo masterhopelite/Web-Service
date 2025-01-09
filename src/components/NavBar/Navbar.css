@@ -1,0 +1,126 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 220px;
+  
+    position: absolute;
+    width: 1920px;
+    height: 92px;
+    left: 0;
+    top: 0;
+  
+    background: #043873;
+    color: white;
+  }
+  
+  /* Logo Styling */
+  .navbar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 191px;
+    height: 34px;
+  }
+  
+  .logo-icon {
+    position: absolute;
+    width: 37px;
+    height: 29px;
+    top: 2.5px;
+    /* background: #FFFFFF; */
+  }
+  
+  .logo-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+  }
+  
+  /* Navbar Menu */
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    width: 988.5px;
+    height: 60px;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  
+  .dropdown-arrow {
+    /* Vector */
+
+    width: 9px;
+    height: 2px;
+
+    /* border: 1px solid #FFFFFF; */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-bottom: 20px;
+    /* width: 9px;
+    height: 4px;
+    border: 1px solid #FFFFFF; */
+  }
+  
+  /* Buttons */
+  .navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    width: 377px;
+    height: 60px;
+  }
+  
+  .btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    background: #FFE492;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #043873;
+  }
+  .btn-free-trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    background: #4F9CF9;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  
