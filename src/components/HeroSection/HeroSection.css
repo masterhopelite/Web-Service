@@ -1,0 +1,111 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 140px 220px;
+    position: absolute;
+    width: 1920px;
+    height: 829px;
+    left: -16px;
+    top: 92px;
+    background: #043873;
+    isolation: isolate;
+    z-index: 0;
+  }
+  
+  /* Heading Section */
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 60px;
+    width: 656px;
+    height: 361px;
+    z-index: 1;
+  }
+  
+  /* Text Block */
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 656px;
+    height: 238px;
+  }
+  
+  .text-block h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .text-block p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  /* Button */
+  .btn-free-trial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 219px;
+    height: 63px;
+    background: #4f9cf9;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn-free-trial span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+  
+  /* Vector Decoration */
+  .group-212 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .vector {
+    position: absolute;
+    left: 86.3%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+    border: 1px solid #ffffff;
+  }
+  
+  /* Image Container */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: 824px;
+    height: 549px;
+    background: #c4defd;
+    z-index: 2;
+  }
+  

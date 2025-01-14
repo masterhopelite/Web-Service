@@ -1,11 +1,16 @@
 import React from 'react';
-import Navbar from './components/NavBar/Navbar';
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
+import Navbar from './components/NavBar/Navbar';
+import HeroSection from './components/HeroSection/HeroSection';
+import WorkManagement from './components/WorkManagement/WorkManagement';
+import Pricing from './components/Pricing/Pricing';
+ function App() {
   return (
     <div>
-      <Navbar />
-    </div>
+  <Navbar/>
+  <HeroSection/>
+     </div>
   );
 }
 
