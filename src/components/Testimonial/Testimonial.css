@@ -1,0 +1,134 @@
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 220px;
+    gap: 60px;
+    isolation: isolate;
+    position: absolute;
+    width: 1919px;
+    height: 994.46px;
+    left: 0px;
+    top: 7876.02px;
+  }
+  
+  .group {
+    position: absolute;
+    left: 60.03%;
+    right: 26.53%;
+    top: 17.1%;
+    bottom: 78.11%;
+  }
+  
+  .vector {
+    position: absolute;
+    left: 60.03%;
+    right: 26.6%;
+    top: 17.1%;
+    bottom: 78.11%;
+    background: #ffe492;
+  }
+  
+  .clients-container {
+    position: absolute;
+    width: 677px;
+    height: 479px;
+    left: 62px;
+    top: 257px;
+  }
+  
+  .header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #1f1f1f;
+    margin-bottom: 40px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+  }
+  
+  .client {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .quote {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .vector {
+    background: #ffe492;
+  }
+  
+  .paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #1f1f1f;
+  }
+  
+  .name-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .avatar {
+    width: 45px;
+    height: 45px;
+    background: #b3b3b3;
+    border-radius: 50%;
+  }
+  
+  .name-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .client-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    color: #1f1f1f;
+  }
+  
+  .client-role {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #808080;
+  }
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .ellipse {
+    width: 20px;
+    height: 20px;
+    background: #e3e3e3;
+    border-radius: 50%;
+  }
+  

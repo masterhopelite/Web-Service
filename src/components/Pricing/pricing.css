@@ -3,10 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  gap: 24px;
   width: 100%;
-  max-width: 1481px;
+  max-width: 1481px; /* Fixed width to prevent the component from stretching too much */
+  padding: 0 20px; /* Added padding for some breathing space */
   margin: 0 auto;
   position: relative;
 }
@@ -15,27 +14,22 @@
 .vector {
   position: absolute;
   background: #ffe492;
-}
-
-.vector-1, .vector-2, .vector-3, .vector-4, .vector-5, .vector-6, .vector-7, .vector-8, .vector-9, .vector-10 {
-  /* Specific positioning for each vector remains unchanged */
+  z-index: -1;
 }
 
 /* Title Styles */
 .choose-plan-title {
-  width: 100%;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2;
   text-align: center;
   color: #212529;
-  margin: 0 auto;
+  margin: 20px 0;
 }
 
 /* Description Styles */
 .choose-plan-description {
-  width: 100%;
   max-width: 800px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -43,10 +37,17 @@
   line-height: 1.7;
   text-align: center;
   color: #212529;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
-/* Price-board Styles */
+/* Price Board Styles */
+.price-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+ 
+}
 .price-board {
   display: flex;
   flex-direction: column;
@@ -54,16 +55,21 @@
   align-items: flex-start;
   padding: 40px 30px;
   gap: 25px;
-  width: 100%;
+  width: 30%;
   max-width: 350px;
   background: #043873;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Text-block */
+.price-board:hover {
+  transform: translateY(-10px);
+}
+
+/* Text Block */
 .text-block {
   display: flex;
   flex-direction: column;
@@ -72,34 +78,31 @@
   width: 100%;
 }
 
-/* Plan Title */
-.personal {
+.plan-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-/* Price */
 .price {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
-  color: #FFE492;
+  color: #ffe492;
 }
 
-/* Description */
 .description {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-/* Bullet-points */
+/* Bullet Points */
 .bullet-points {
   display: flex;
   flex-direction: column;
@@ -113,45 +116,83 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
-
-/* Icon */
-.icon {
-  width: 18px;
-  height: 18px;
-}
-
-/* Feature Text */
-.feature-text {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-/* Button */
+.icon {
+  width: 18px;
+  height: 18px;
+  background-color: #ffe492;
+  border-radius: 50%;
+}
+
+/* Button Styles */
 .btn-get-started {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 40px;
-  width: 100%;
+  width: 60%;
   max-width: 200px;
-  background: #4F9CF9;
+  background: #4f9cf9;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .btn-get-started:hover {
-  background: #3B83D4;
+  background: #3b83d4;
 }
 
 .get-started {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .choose-plan-container {
+    padding: 20px;
+  }
+
+  .price-board {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .choose-plan-title {
+    font-size: 36px;
+  }
+
+  .choose-plan-description {
+    font-size: 16px;
+  }
+
+  .plan-title {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 28px;
+  }
+
+  .btn-get-started {
+    max-width: 180px;
+  }
+}
+
+/* Accessibility Focus States */
+.btn-get-started:focus {
+  outline: 2px solid #ffe492;
+}
+
+.point:focus {
+  outline: 2px solid #ffe492;
 }
