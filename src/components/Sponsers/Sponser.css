@@ -1,0 +1,180 @@
+/* Sponsors container */
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 20px; /* Adjusted padding for responsiveness */
+  gap: 100px;
+  isolation: isolate;
+  position: relative;
+  width: 100%; /* Use full width of the viewport */
+  max-width: 100%; /* Ensures it doesn't overflow */
+  height: auto;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Heading section */
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 87px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #212529;
+  margin-bottom: 50px;
+  padding-left: 20px; /* Added for small screens */
+  padding-right: 20px; /* Added for small screens */
+}
+
+/* Sponsors section */
+.sponsors {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to avoid overflow */
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1482px; /* Ensures no overflow */
+  height: auto;
+  box-sizing: border-box; /* Prevents overflow */
+}
+
+/* Individual sponsor styles */
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  margin: 0 auto;
+  width: 60px; /* Adjust width to fit better */
+  height: 68px;
+  max-width: 100%; /* Ensures no horizontal overflow */
+}
+
+/* Apple */
+.sponsor.apple {
+  width: 60px;
+  height: 68px;
+}
+
+.apple-logo {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* Microsoft */
+.sponsor.microsoft {
+  width: 60px;
+  height: 60px;
+}
+
+.microsoft-logo {
+  width: 100%;
+  height: 100%;
+  background: #706D6E;
+  position: relative;
+}
+
+.microsoft-logo::before,
+.microsoft-logo::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.microsoft-logo::before {
+  background: #F1511B;
+  top: 0;
+  left: 0;
+}
+
+.microsoft-logo::after {
+  background: #80CC28;
+  bottom: 0;
+  right: 0;
+}
+
+/* Slack */
+.sponsor.slack {
+  width: 60px;
+  height: 60px;
+}
+
+.slack-logo {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  position: relative;
+}
+
+.slack-logo::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background: #36C5F0; /* Slack blue */
+  top: 5%;
+  left: 5%;
+}
+
+.slack-logo::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background: #E01E5A; /* Slack pink */
+  bottom: 5%;
+  right: 5%;
+}
+
+/* Google */
+.sponsor.google {
+  width: 60px;
+  height: 60px;
+}
+
+.google-logo {
+  width: 100%;
+  height: 100%;
+  background: #EA4335;
+  position: relative;
+}
+
+.google-logo::before,
+.google-logo::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+.google-logo::before {
+  background: #FBBC05; /* Google yellow */
+  top: 0;
+  left: 0;
+}
+
+.google-logo::after {
+  background: #4285F4; /* Google blue */
+  bottom: 0;
+  right: 0;
+}
+
+/* Prevent Horizontal Scroll */
+body {
+  overflow-x: hidden; /* This will hide any horizontal overflow from the body */
+}

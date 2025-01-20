@@ -1,0 +1,168 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 32px; /* Adjusted for better responsiveness */
+    background: #043873;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    width: 100%;
+    max-width: 1480px;
+    justify-content: space-between;
+    gap: 40px; /* Adds spacing for wrapped items */
+  }
+  
+  .logo-description {
+    max-width: 240px;
+    flex: 1; /* Makes it flexible for responsiveness */
+    min-width: 200px; /* Ensures a minimum size */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .logo-icon {
+    width: 37px;
+    height: 29px;
+    background: #fff;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 24px; /* Reduced size for better scaling */
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 16px; /* Reduced size for smaller screens */
+    line-height: 1.6;
+  }
+  
+  .info-sections {
+    display: flex;
+    flex: 2; /* Allows more flexibility in layout */
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .info-section {
+    max-width: 200px;
+    flex: 1; /* Distributes space equally */
+    min-width: 150px; /* Ensures minimum width */
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px; /* Reduced size for readability on smaller screens */
+    line-height: 1.8;
+  }
+  
+  .cta {
+    max-width: 300px;
+    flex: 1; /* Flex item for better responsiveness */
+    min-width: 200px;
+    text-align: center; /* Center-aligned for better aesthetics */
+  }
+  
+  .cta h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: #4f9cf9;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Adjusted padding */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #357bd4; /* Adds hover effect for better UX */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column; /* Stacks on smaller screens */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1480px;
+    margin-top: 32px;
+    gap: 10px; /* Adds spacing for stacked items */
+  }
+  
+  .footer-bottom .terms {
+    display: flex;
+    flex-wrap: wrap; /* Wraps items on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    background: #f7f7ee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon:hover {
+    background: #d9d9d9; /* Hover effect for icons */
+  }
+  
+  /* Media Query for smaller devices */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-sections {
+      gap: 20px; /* Reduced gap on smaller screens */
+    }
+  
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
