@@ -9,12 +9,20 @@ import Testimonial from './components/Testimonial/Testimonial';
 import Footer from './components/Footer/Footer';
 import Extension from './components/Extension/Extension';
 import FreeTrial from './components/FreeTrial/FreeTrial';
+import Project from './components/ProjectManangement/project'
+import Customize from './components/Customize/customize';
+// import './components/ProjectManangement/'
+
  function App() {
   return (
     <div>
   <Navbar/>
   <HeroSection/>
-<Pricing/>  
+  <Project/>
+  
+<Extension/>
+<Customize/>  
+<Pricing/>
 <WorkManagement/>
 <FreeTrial/>
  <Footer/>

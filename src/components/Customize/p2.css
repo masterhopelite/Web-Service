@@ -5,24 +5,18 @@ body {
     font-family: 'Inter', sans-serif;
   }
   
-  .container1 {
+  .container3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;
+    padding: 100px;
     gap: 60px;
     isolation: isolate;
-    width: 100%;
+    width: 1480px;
     height: 547px;
-    background: #003366;
   }
-  .image-container1 {
-    width: 748px;
-    height: 547px;
-    background: #003366; /* Dark blue color */
-    z-index: 2;
-}
-  .headline1 {
+  
+  .headline3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,26 +26,27 @@ body {
     z-index: 1;
   }
   
-  .headline1 h1 {
-    font-size: 72px;
+  .headline3 h1 {
+    font-size: 60px;
     margin-left: 40%;
     font-weight: 700;
     line-height: 87px;
     letter-spacing: -0.02em;
-    color: #fefeff;
+    color: #212529;
   }
   
-  .headline1 .description1 {
+  .headline3 .description3 {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: -0.02em;
-    color: #f5f8fa;
+    color: #212529;
     margin-left: 40%;
     margin-top: 0; /* Removed extra space below the heading */
   }
   
-  .btn-get-started {
+  
+  .btn-get-started3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,13 +62,13 @@ body {
     margin-top: 5px; /* Minimal spacing below the description */
   }
   
-  .btn-get-started span {
+  .btn-get-started3 span {
     font-size: 18px;
     font-weight: 500;
     color: #FFFFFF;
   }
   
-  .icon {
+  .icon3 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -82,13 +77,13 @@ body {
     height: 14px;
   }
   
-  .group {
+  .group3 {
     position: relative;
     width: 14px;
     height: 14px;
   }
   
-  .vector.horizontal {
+  .vector.horizontal3 {
     position: absolute;
     left: 0;
     right: 0;
@@ -97,7 +92,7 @@ body {
     border: 1px solid #FFFFFF;
   }
   
-  .vector.vertical {
+  .vector.vertical3 {
     position: absolute;
     left: 50%;
     right: 0;
@@ -106,16 +101,10 @@ body {
     border: 1px solid #FFFFFF;
   }
   
-  /* .image-container {
+  .image-container3 {
     width: 748px;
     height: 547px;
-    background: #C4DEFD;
+    background: #f6f7f9;
     z-index: 2;
-  } */
-  .image-container {
-    width: 748px;
-    height: 547px;
-    background: #003366; /* Dark blue color */
-    z-index: 2;
-}
+  }
   
